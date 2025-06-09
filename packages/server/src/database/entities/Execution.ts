@@ -18,7 +18,7 @@ export class Execution implements IExecution {
     agentflowId: string
 
     @Index()
-    @Column({ type: 'varchar' })
+    @Column({ type: 'uuid' })
     sessionId: string
 
     @Column({ nullable: true, type: 'text' })
